@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Tahoma, sans-serif;
@@ -71,12 +71,55 @@ input {
 }
 
 input:focus {
-    width: 90vw;
-    height: 2em;
+    width: 70vw;
+    height: 1.5em;
     transition: 0.8s;
     border-radius: 40px;
     font-size: xx-large;
     margin-bottom: 10px;
     background-image: url('img/searchiconbig.png');
     background-position-x: 10px;
+}
+
+.navigation {
+    position: absolute;
+    top: 12px;
+    border: 0px solid;
+    background-color: #fbaeba;
+    transition: 0.8s;
+
+}
+
+.navigation:hover {
+    cursor: pointer;
+}
+
+input:focus + .navigation {
+    position: absolute;
+    top: 20px;
+    border: 0px solid;
+    background-color: #fbaeba;
+    transition: 0.8s;
+
+}
+
+.hourly-forecast {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hourly-whole {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5px;
+    background-color: #fcbaa6;
+    padding-bottom: 3em;
+}
+
+#hourly-title {
+    background-color: wheat;
 }
