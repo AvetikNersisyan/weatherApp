@@ -14,7 +14,7 @@ export default function Header({onDataFetch}) {
     useEffect(() => {
         let id = setTimeout(() => {
             if (!text?.trim()) return;
-            fetch(`http://api.weatherapi.com/v1/forecast.json?key=27c4826a9f004c8796a155048212912&q=${query}&days=2&aqi=no&alerts=no`)
+            fetch(`https://api.weatherapi.com/v1/forecast.json?key=27c4826a9f004c8796a155048212912&q=${query}&days=2&aqi=no&alerts=no`)
                 .then((resp) => resp.json())
                 .then((data) => {
                     setData(data);
