@@ -11,6 +11,7 @@ export default function Main () {
     }
 
     return <div>
+        Hello Armenia
         <Header onDataFetch={onDataFetch} />
         <h2 id={"hourly-title"}>  Hourly forecast  for tomorrow</h2>
 
